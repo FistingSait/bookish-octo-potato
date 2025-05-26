@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы компьютера</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Основы работы с компьютером</h1>
+        <p>Первый шаг в освоении компьютера</p>
+    </header>
+
+    <nav>
+        <button onclick="location.href='../index.html'">Главная</button>
+        <button onclick="location.href='basic.html'" class="active">Основы компьютера</button>
+        <button onclick="location.href='internet.html'">Работа с интернетом</button>
+        <button onclick="location.href='safety.html'">Безопасность</button>
+        <button onclick="showHelp()">Помощь</button>
+    </nav>
+
+    <main>
+        <article>
+            <h2>1. Основные части компьютера</h2>
+            <img src="https://sun9-12.userapi.com/impg/___vkGnvoCcIBK5afden4O3WR-EbnPLyVmPSWQ/qFJ1_wZMi20.jpg?size=1200x900&quality=96&sign=2c317c795d60299ea737ecc6ca4d98f3&c_uniq_tag=orwoEZNUQAg5SIm3CrDomfQUGKKo7tZ9ISydJl23CFo&type=album" alt="Части компьютера" style="max-width: 100%;">
+            <p>Компьютер состоит из нескольких основных частей:</p>
+            <ul>
+                <li><strong>Монитор</strong> - экран, на котором вы видите информацию</li>
+                <li><strong>Системный блок</strong> - "мозг" компьютера</li>
+                <li><strong>Клавиатура</strong> - для ввода текста</li>
+                <li><strong>Мышь</strong> - для управления курсором</li>
+            </ul>
+            
+            <h2>2. Как включить компьютер</h2>
+            <p>1. Найдите кнопку питания на системном блоке (обычно она большая)</p>
+            <p>2. Нажмите на нее один раз и отпустите</p>
+            <p>3. Подождите 1-2 минуты, пока компьютер загрузится</p>
+        </article>
+        
+        <div class="navigation">
+            <button onclick="location.href='../index.html'">Назад</button>
+            <button onclick="location.href='internet.html'">Далее: Интернет</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Телефон поддержки: <strong>8-800-123-4567</strong> (звонок бесплатный)</p>
+        <p>© 2023 Компьютерная Грамота</p>
+    </footer>
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideHelp()">&times;</span>
+            <h2>Нужна помощь?</h2>
+            <p>Если что-то не получается:</p>
+            <ol>
+                <li>Попробуйте прочитать инструкцию еще раз</li>
+                <li>Попросите помощи у родственников</li>
+                <li>Позвоните нам по указанному номеру</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

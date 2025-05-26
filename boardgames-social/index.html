@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерная Грамота для Старшего Поколения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Компьютерная Грамота</h1>
+        <p>Простые уроки для старшего поколения</p>
+    </header>
+
+    <nav>
+        <button onclick="location.href='index.html'" class="active">Главная</button>
+        <button onclick="location.href='basic.html'">Основы компьютера</button>
+        <button onclick="location.href='internet.html'">Работа с интернетом</button>
+        <button onclick="location.href='safety.html'">Безопасность</button>
+        <button onclick="showHelp()">Помощь</button>
+    </nav>
+
+    <main>
+        <section class="welcome">
+            <h2>Добро пожаловать!</h2>
+            <p>Этот сайт создан специально для обучения старшего поколения компьютерной грамотности.</p>
+            <p>Выберите раздел обучения в меню выше.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>✓ Простые объяснения</h3>
+                    <p>Без сложных терминов</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Крупный текст</h3>
+                    <p>Удобно для чтения</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Пошаговые уроки</h3>
+                    <p>С картинками и примерами</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Телефон поддержки: <strong>8-800-123-4567</strong> (звонок бесплатный)</p>
+        <p>© 2023 Компьютерная Грамота</p>
+    </footer>
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideHelp()">&times;</span>
+            <h2>Нужна помощь?</h2>
+            <p>Чтобы начать обучение:</p>
+            <ol>
+                <li>Нажмите на одну из кнопок в верхнем меню</li>
+                <li>Читайте уроки по порядку</li>
+                <li>Если что-то непонятно - звоните нам!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

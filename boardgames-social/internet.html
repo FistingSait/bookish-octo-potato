@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы компьютера</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Основы работы с интернетом</h1>
+        <p>Первый шаг в освоении интернета</p>
+    </header>
+
+    <nav>
+        <button onclick="location.href='../index.html'">Главная</button>
+        <button onclick="location.href='basic.html'" class="active">Основы компьютера</button>
+        <button onclick="location.href='internet.html'">Работа с интернетом</button>
+        <button onclick="location.href='safety.html'">Безопасность</button>
+        <button onclick="showHelp()">Помощь</button>
+    </nav>
+
+    <main>
+        <article>
+            <h2>1. Основные правила работы в интернете</h2>
+            <img src="https://atnews.org/wp-content/uploads/2024/02/501302_original-520x245.png">
+            <p>Интернет состоит из:</p>
+            <ul>
+                <li><strong>браузер</strong> - Браузер (от англ. web browser) — это программное обеспечение для просмотра веб-страниц, которое позволяет пользователю взаимодействовать с интернетом (пожалуйста нигода не верьте никому в интернете!)</li>
+                <li><strong>если что то нужно!</strong> - переходим в свой браузер нажимаем на поиск и с помощью клавиатуры вписываем то что нам нужно в интернете есть большая часть информации </li>
+                <li><strong>ВКонтакте</strong> - одна из самых больших соцсетей в всемирной паутине там можно пообщаться со своими друзьями так же есть Однокласники тоже самое что и вконтакте но однокласники сделаны больше под старшее поколение</li>
+                <li><strong>ютуб</strong> - на данном сайте можно просмотреть какие либо видео ролики начиная от програм по приготовлению блюд заканчивая передачей малахова или сбором двигателя с нуля </li>
+            </ul>
+            
+            
+        </article>
+        
+        <div class="navigation">
+            <button onclick="location.href='../index.html'">Назад</button>
+            <button onclick="location.href='internet.html'">Далее: Безопасность</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Телефон поддержки: <strong>8-800-123-4567</strong> (звонок бесплатный)</p>
+        <p>© 2023 Компьютерная Грамота</p>
+    </footer>
+
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideHelp()">&times;</span>
+            <h2>Нужна помощь?</h2>
+            <p>Если что-то не получается:</p>
+            <ol>
+                <li>Попробуйте прочитать инструкцию еще раз</li>
+                <li>Попросите помощи у родственников</li>
+                <li>Позвоните нам по указанному номеру</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
